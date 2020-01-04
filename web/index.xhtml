@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+       <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"/>
+       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+       <title>Enfes |Yemek| Tarifler</title>
+       <link href="./css/style.css" type="text/css" rel="stylesheet" />
+       
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <h:outputStylesheet library="css" name="style.css"  />
+       <h:outputScript library="js" name="jquery.js"/>
+     
+     <f:metadata>
+        <f:viewParam name="kahvalticesitleri" value="#{tarifler.tarif_id}" />
+        <f:viewParam name="diyetyemekleri" value="#{tarifler.tarif_id}" />
+        <f:viewParam name="makarnalar" value="#{tarifler.tarif_id}" />
+        <f:viewParam name="baliklar" value="#{tarifler.tarif_id}" />
+        <f:viewParam name="etyemekleri" value="#{tarifler.tarif_id}" />
+        <f:viewParam name="pizzalar" value="#{tarifler.tarif_id}" />
+        <f:viewParam name="hamburgerler" value="#{tarifler.tarif_id}" />
+    </f:metadata>
+      
+       
+    </h:head>
+    
+    <h:body>
+     
+        <div>
+		<div class="menu">
+			
+				<div class="type1">
+
+					<div class="menucontent">
+						<img src="resources/img/small-image.png" />
+                                       
+					</div>
+
+					<div class="menucontent2">
+						<ul class="mainmenu clearfix">
+							<li><a href="#">ANA SAYFA</a></li>
+                                                        <li><a href="recipelist.xhtml">TARİFLER</a></li>
+                                                        <li><a href="blog.xhtml">BLOG</a></li>
+							<li><a href="aboutus.xhtml">HAKKIMIZDA</a></li>
+							<h:form>
+                                                            <h:panelGrid columns="2">
+                                                                <h:commandButton action="register.xhtml" value="Kayıt Ol" style="width:72px; text-align: center" />
+                                                            </h:panelGrid>
+                                                        </h:form>
+                                                         <h:form>
+                                                            <h:panelGrid columns="2">
+                                                                <h:commandButton action="recipeadd.xhtml" value="Tarif Ekle" style="width:72px; text-align: center" />
+                                                            </h:panelGrid>
+                                                        </h:form>
+      
+						</ul>
+					</div>
+                              
+                                    
+					<div class="section1">
+						<p>Enfes |Yemek| Tarifler</p>
+					</div>
+
+				</div>
+
+				<div class="type2">
+					
+					<div class="subject">
+						<h2>ENFES |YEMEK| TARİFLER'E HOŞ GELDİNİZ!</h2>
+						<ul class="smallmenu clearfix">
+							<li><a href="https://www.google.com.tr">Sağlıklı Bir Kahvaltı!</a></li>
+							<li><a href="https://www.google.com.tr">Diyetteyim Ne Yemeliyim?</a></li>
+							<li><a href="https://www.google.com.tr">Atıştırmalıklar</a></li>
+							<li><a href="https://www.google.com.tr">Salatalar</a></li>
+							<li><a href="https://www.google.com.tr">Ana Yemekler</a></li>
+							<li><a href="https://www.google.com.tr">Balıklar</a></li>
+							<li><a href="https://www.google.com.tr">Çorbalar</a></li>
+							
+						</ul>
+					</div>
+
+					
+
+				</div>
+		</div>
+        
+            
+       
+                <div class="photogallery">
+                     <span class="glyphicon glyphicon-remove"></span><h1>TARİFLER</h1> <span class="glyphicon glyphicon-remove"></span>
+                        <div class="photo-type1">
+                     
+                            <div class="photo-subject">
+                                    
+                                    <ul class="photo-basic-gallery clearfix">
+                                        <li><a href="categorylist.xhtml?kahvalti"><div class="connect"><img src="resources/img/yemek/p5.jpg" /><p>KAHVALTI ÇEŞİTLERİ</p></div></a></li>
+                                        <li><a href="categorylist.xhtml?diyet"><div class="connect"><img src="resources/img/yemek/p3.jpg" /><p>DİYET YEMEKLERİ</p></div></a></li>
+                                        <li><a href="categorylist.xhtml?makarnalar"><div class="connect"><img src="resources/img/yemek/p4.jpg" /><p>MAKARNALAR</p></div></a></li>
+                                        <li><a href="categorylist.xhtml?baliklar"><div class="connect"><img src="resources/img/yemek/fish.jpg" /><p>BALIKLAR</p></div></a></li>
+                                        <li><a href="categorylist.xhtml?et"><div class="connect"><img src="resources/img/yemek/p8.jpg" /><p>ET YEMEKLERİ</p></div></a></li>
+                                        <li><a href="categorylist.xhtml?pizza"><div class="connect"><img src="resources/img/yemek/p1.jpg" /><p>PİZZALAR</p></div></a></li>
+                                        <li><a href="categorylist.xhtml?hamburger"><div class="connect"><img src="resources/img/yemek/p2.jpg" /><p>HAMBURGERLER</p></div></a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                        
+                    
+               </div>   
+            
+            
+            
+        <div class="small-recipes">
+			
+			<div class="display-container">
+				
+				<div class="container-subject">
+					<h2>YEMEK TARİFLERİ GALERİSİ</h2>
+			    </div>
+
+			    <div class="container-finish">
+                                <ul class="display-container-slider clearfix">
+                                    <li><img class="mySlides" style="display:block;" src="resources/img/yemek/diet.jpg"/></li>
+                                    <li><img class="mySlides" src="resources/img/yemek/chicken.jpg" /></li>
+                                    <li><img class="mySlides" src="resources/img/yemek/cookie.jpg"/></li>
+                                    <li><img class="mySlides" src="resources/img/yemek/beef-food.jpg"/></li>
+                                    <li><img class="mySlides" src="resources/img/yemek/patty.jpg"/></li>
+                                    <li><img class="mySlides" src="resources/img/yemek/pie.jpg"/></li>
+                                    <li><img class="mySlides" src="resources/img/yemek/pizza.jpg"/></li>
+                                    <li><img class="mySlides" src="resources/img/yemek/small-beef.jpg"/></li>
+                            <button class="w3-left" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-right" onclick="plusDivs(1)">&#10095;</button>
+                                </ul>
+				</div> 
+                            
+			</div>
+        </div>
+         
+         
+       <div class="food-matter">
+           <div class="matter-text">
+               <span class="glyphicon glyphicon-remove"></span><h1>YEMEKLER</h1><span class="glyphicon glyphicon-remove"></span>
+           </div>
+           
+           <div class="matter-text1">
+               <ul class="matter-text1-list clearfix">
+                   <li><img src="resources/img/yemek/small-salad.jpg"/><p>TAMAMEN ŞAŞIRTICI ETKİLİ YEMEKLER</p></li>
+                   <li><img src="resources/img/yemek/small-beef.jpg" /><p>YAVAŞ PİŞİRİLMİŞ ET YEMEKLERİ</p></li>
+                   <li><img src="resources/img/yemek/beef-food.jpg"/><p>SULU ET YEMEKLERİ</p></li>
+                   <li><img src="resources/img/yemek/spagetti.jpg"/><p>VEJETARYEN YEMEKLERİ</p></li>
+                   <li><img src="resources/img/yemek/chicken.jpg"/><p>TAVUK YEMEKLERİ</p></li>
+                   <li><img src="resources/img/yemek/pie.jpg"/><p>KAHVALTI</p></li>
+               </ul>
+           </div>
+           
+       </div>
+       
+      
+        <div class="beef-food-context">
+            <div class="beef-food-date">
+                <span class="post-date"><p>11 Nisan 2018</p></span>
+            </div>
+            
+             <div class="beef-food-subject">
+                 <h1>IZGARA ET NASIL YAPILIR?</h1>
+            </div>
+            
+            <div class="beef-food-img">
+                <img src="resources/img/yemek/et.jpg" />
+            </div>
+            
+            <div class="beef-food-main">
+                <p>Ayçiçek yağı, süt, zeytinyağı, rendelenmiş sarımsak, taze çekilmiş tane karabiber,
+                    biberiye ve taze kekiği karıştırarak marinasyon için hazır hale getirin.
+                    Dana bonfileyi bu karışıma yatırarak bekletin.
+                    Marine olan eti ızgarada ters yüz ederek pişirin.</p>
+                <p>Detaylı tarif için <a href="http://localhost:8080/project-food-jsf/"> ENFES |YEMEK| TARİFLER'E </a><b>tıklayınız!</b></p>
+            </div>
+         </div>
+            
+        <div class="breakfast-food-context">
+            <div class="beef-food-date">
+                <span class="post-date"><p>11 Nisan 2018</p></span>
+            </div>
+            
+             <div class="beef-food-subject">
+                 <h1>SAĞLIKLI KAHVALTI NASIL YAPILIR?</h1>
+            </div>
+            
+            <div class="beef-food-img">
+                <img src="resources/img/breakfast.jpg" />
+            </div>
+            
+            <div class="beef-food-main">
+                <p>İçinde hiç şeker olmayan ama şeker mi şeker bir tarif bu. Meyvelerin her halini sevenler için kahvaltının en güzel parçası bu sağlıklı pankek olacak!</p>
+                <p>Detaylı tarif için <a href="http://localhost:8080/project-food-jsf/"> ENFES |YEMEK| TARİFLER'E </a><b>tıklayınız!</b></p>
+            </div>
+        </div>
+            
+         <div class="fish-food-context">
+            <div class="beef-food-date">
+                <span class="post-date"><p>11 Nisan 2018</p></span>
+            </div>
+            
+             <div class="beef-food-subject">
+                 <h1>FIRINDA BALIK NASIL YAPILIR?</h1>
+            </div>
+            
+            <div class="beef-food-img">
+                <img src="resources/img/sarımsak.jpg" />
+            </div>
+            
+            <div class="beef-food-main">
+                <p>Fırında pişirilecek balıkların, birkaç saat zeytinyağı ve limon karışımında bekletilerek terbiyelenmesinde fayda var.  Arzuya göre kekik veya defne yaprağı da konulabilir. Balıklar, 200 derecede ısıtılmış fırında, zeytinyağlı bir tepsiye yerleştirilip pişirilir. Dilimlenmiş palamut, torik ve kolyoz, domates, soğan, limon dilimleri ve bol maydanozla birlikte fırında pişirildiğinde oldukça lezzetli olacaktır.</p>
+                <p>Detaylı tarif için <a href="http://localhost:8080/project-food-jsf/"> ENFES |YEMEK| TARİFLER'E </a><b>tıklayınız!</b></p>
+            </div>
+        </div>
+               
+            
+            
+            
+
+ <div class="allregister">
+     <img src="resources/img/registerphoto.jpg"/>
+  <div class="register">
+     
+   
+        
+      
+     
+      
+    
+   </div> 
+        
+  </div>
+        
+</div>
+        
+        
+    </h:body>    
+</html>
+

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+     <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/categorylist.css" />
+        <title>Enfes |Yemek| Tarifler</title>
+        <h:outputScript library="js" name="jquery.js"/>
+     
+  
+     </h:head>
+    <h:body>
+    <div>
+        <div class="blog-navbar-recipelist">
+
+            <div class="blog-navbar-recipelist-type">
+                    <ul class="blog-navbar-recipelist-list clearfix">
+                            <li><a href="index.xhtml">ANA SAYFA</a></li>
+                            <li><a class= "active" href="recipelist.xhtml">TARİFLER</a></li>
+                            <li><a href="blog.xhtml">BLOG</a></li>
+                            <li><a href="aboutus.xhtml">HAKKIMIZDA</a></li>
+                          
+                    </ul>
+            </div>
+
+        </div>
+        <div class="tarif-part-icerik">
+             <ui:repeat var="tarifler" value="#{tarifler.tariflerList}">
+              <h:form prependId="false">
+                 <h:panelGrid columns="1">
+                   
+                   <h:graphicImage  value="#{tarifler.tarif_img}"/>
+                   <a href="recipedetail.xhtml?#{tarifler.tarif_id}">#{tarifler.tarif_adi}</a>
+                   
+                 </h:panelGrid>
+                </h:form>
+        </ui:repeat> 
+        </div>
+        
+        <div class="part-end">
+           
+            <div class="part-end-content">
+                
+                <div class="content-text1">
+                    <h1>Enfes |Yemek| Tarifler</h1>
+                    <p>Kullanıcılarına en güzel tarifler veren yemek tarifi sitesi olmak amacı ile yayına sunduğumuz sitemiz sizlerin bilgisine ve beğenisine sunulan nefis yemek tarifleri ile en kolay yemek tarifi önerilerimizi değerlendirerek enfes yemekler ve dekoratif sofralar hazırlayabilirsiniz.</p>
+                </div>
+                
+                <div class="content-text2">
+                   <ul class="content-text2list clearfix">
+                        <li><p>Kahvaltı Çeşitleri</p></li>
+                        <li><p>Diyet Yemekleri</p></li>
+                        <li><p>Makarnalar</p></li>
+                        <li><p>Balıklar</p></li>
+                        <li><p>Et Yemekleri</p></li>
+                        <li><p>Pizzalar</p></li>
+                        <li><p>Hamburgerler</p></li>
+                   </ul>
+                </div>
+                
+                <div class="content-text3">
+                    <ul class="content-text3-list clearfix">
+                        <li><i style="font-size:24px" class="fa">&#xf082;</i><h3>FACEBOOK</h3></li>
+                        <li><i style="font-size:24px" class="fa">&#xf099;</i><h3>TWITTER</h3></li>
+                        <li><i style="font-size:24px" class="fa">&#xf16d;</i><h3>INSTAGRAM</h3></li>
+                        <li><i style="font-size:24px" class="fa">&#xf1a0;</i><h3>GOOGLE</h3></li>
+                      
+                   </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+
+
+        
+
+    </h:body>
+</html>
+

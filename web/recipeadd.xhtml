@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Enfes |Yemek| Tarifler</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/recipeadd.css" />
+
+    </h:head>
+    <h:body>
+       
+        <div class="recipeadd-all">
+            <div class="blog-navbar-recipelist">
+
+            <div class="blog-navbar-recipelist-type">
+                    <ul class="blog-navbar-recipelist-list clearfix">
+                            <li><a href="index.xhtml">ANA SAYFA</a></li>
+                            <li><a class= "active" href="recipelist.xhtml">TARİFLER</a></li>
+                            <li><a href="blog.xhtml">BLOG</a></li>
+                            <li><a href="aboutus.xhtml">HAKKIMIZDA</a></li>
+                    
+                    </ul>
+            </div>
+
+            </div>
+            
+            <div class="text2">
+            <h3>Tarif Ekle</h3>
+            <f:view contentType="text/html">
+        <h:form prependId="false" enctype="multipart/form-data">
+         
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Tarif Adı:"/>
+                <h:inputText id="tarif_adi" value="#{tarifler.tarif_adi}" immediate="true"/>
+                
+                <h:outputLabel value="Tarif İçeriği:"/> 
+                <h:inputTextarea id="tarif_icerik" value="#{tarifler.tarif_icerik}" immediate="true"/>
+                
+                <h:outputLabel value="Tarif Fotoğrafı:" />
+                <h:inputText id="tarif_img" value="#{tarifler.tarif_img}" immediate="true"/>
+                <h:outputLabel value="Tarif Kategori:"/>
+                <h:selectOneMenu id="tarif_kategori" value="#{tarifler.tarif_kategori}"> 
+                    
+                           <f:selectItem itemValue = "Kahvaltı Çeşitleri" itemLabel = "Kahvaltı Çeşitleri" /> 
+                           <f:selectItem itemValue = "Diyet Yemekleri" itemLabel = "Diyet Yemekleri" /> 
+                           <f:selectItem itemValue = "Makarnalar" itemLabel = "Makarnalar" /> 
+                           <f:selectItem itemValue = "Balıklar" itemLabel = "Balıklar" /> 
+                           <f:selectItem itemValue = "Et Yemekleri" itemLabel = "Et Yemekleri" /> 
+                           <f:selectItem itemValue = "Pizzalar" itemLabel = "Pizzalar" /> 
+                           <f:selectItem itemValue = "Hamburgerler" itemLabel = "Hamburgerler" /> 
+
+                </h:selectOneMenu> 	
+                
+                
+                <h:commandButton value = "Kaydet" onclick = "alert('Tarif Başarıyla Eklendi!');" action="#{tarifler.testTest()}" />
+                
+                <h:commandButton value = "Ana Sayfaya Git" action="index.xhtml" />
+            </h:panelGrid>
+             
+         </h:form>
+            </f:view>
+           </div>
+           
+            <div class="part-end">
+           
+            <div class="part-end-content">
+                
+                <div class="content-text1">
+                    <h1>Enfes |Yemek| Tarifler</h1>
+                    <p>Kullanıcılarına en güzel tarifler veren yemek tarifi sitesi olmak amacı ile yayına sunduğumuz sitemiz sizlerin bilgisine ve beğenisine sunulan nefis yemek tarifleri ile en kolay yemek tarifi önerilerimizi değerlendirerek enfes yemekler ve dekoratif sofralar hazırlayabilirsiniz.</p>
+                </div>
+                
+                <div class="content-text2">
+                   <ul class="content-text2list clearfix">
+                        <li><p>Kahvaltı Çeşitleri</p></li>
+                        <li><p>Diyet Yemekleri</p></li>
+                        <li><p>Makarnalar</p></li>
+                        <li><p>Balıklar</p></li>
+                        <li><p>Et Yemekleri</p></li>
+                        <li><p>Pizzalar</p></li>
+                        <li><p>Hamburgerler</p></li>
+                   </ul>
+                </div>
+                
+                <div class="content-text3">
+                    <ul class="content-text3-list clearfix">
+                        <li><i style="font-size:24px" class="fa">&#xf082;</i><h3>FACEBOOK</h3></li>
+                        <li><i style="font-size:24px" class="fa">&#xf099;</i><h3>TWITTER</h3></li>
+                        <li><i style="font-size:24px" class="fa">&#xf16d;</i><h3>INSTAGRAM</h3></li>
+                        <li><i style="font-size:24px" class="fa">&#xf1a0;</i><h3>GOOGLE</h3></li>
+                      
+                   </ul>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </h:body>
+    
+</html>
